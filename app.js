@@ -378,3 +378,5 @@ btnNext.addEventListener('click', () => {
 
     next();
 });
+
+//End
