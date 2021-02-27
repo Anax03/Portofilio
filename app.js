@@ -327,7 +327,7 @@ function TheName() {
             name = [0, 'business theme'];
             break;
         case 'SuperCoach':
-            name = [1, 'coachingtheme'];
+            name = [1, 'coachingTheme'];
             break;
         case 'Ecommerce website':
             name = [2, 'store'];
