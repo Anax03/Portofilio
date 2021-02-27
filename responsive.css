@@ -1,0 +1,171 @@
+/* Header burger menu */
+
+@media (max-width:460px){
+
+    #navbar{
+
+      
+        padding: 1rem;
+      
+    }
+
+    
+
+    @media (max-width:300px){
+    .logo img{
+        width: auto;
+        height: 35px;
+    }
+
+    #navbar .fa-bars{
+        font-size: 1rem;
+    }
+
+    #navbar h1{
+        display: none;
+    }
+
+
+    @media (max-width:100px){
+        #navbar{
+            flex-direction: column;
+            
+        }
+
+        #navbar img{
+            margin-bottom: 1rem;
+        }
+
+    }
+}
+   
+}
+
+/* Section presentation */
+
+@media (max-width:250px){
+
+    #presenatation .contentPr{
+        
+        height: auto;
+        padding: 0.2rem;
+        
+        }
+}
+
+/* Services  */
+
+@media (max-width:750px){
+
+    .contentServices{
+
+        flex-direction: column;
+    }
+
+    .task{
+        width: 100%;
+    }
+    .task:nth-child(2),.task:nth-child(3){
+        display: none;
+    }
+
+    .arrows .fas{
+        font-size: 1.4rem;
+        cursor: pointer;
+        color: var(--purple);
+        }
+        .arrows .fa-arrow-left{
+        left: 10px;
+        
+        
+        }
+        
+        .arrows .fa-arrow-right{
+        
+            right: 10px;
+        }
+
+        @media (max-width:300px){
+            .contentServices .fas , .contentServices .fab{
+               font-size: 2rem;
+            }
+            .arrows .fas{
+                font-size: 1rem;
+                
+                }
+        }
+
+        @media (max-width:180px){
+
+            .arrows .fa-arrow-left{
+                position: absolute;
+               
+                top: 90%;
+                
+                }
+                
+                .arrows .fa-arrow-right{
+                    position: absolute;
+                   
+                    top: 90%;
+                    right: 10px;
+                }
+        }
+        
+}
+
+
+/* Projets image */
+
+
+@media(max-width:700px){
+    .projetsImages{
+
+        grid-template-columns: 1fr ;
+        width: 90%;
+    }
+}
+
+@media(max-width:870px){
+
+    .moreImages{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .moreImages img{
+    
+        max-width: 95%;
+        max-height: 300px;
+    }
+
+    .moreImages .fas {
+        font-size: 1rem;
+        
+    }
+
+    @media(max-width:370px){
+        .moreImages img{
+    
+           
+            max-height:250px;
+        }
+
+        .projetsImages img{
+    
+           
+            height: 160px;
+           
+            
+        
+        }
+    }
+}
+
+/* footer */
+@media (max-width:200px){
+    footer .icons {
+        flex-direction: column;
+    }
+}

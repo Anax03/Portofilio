@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+/* reset  */
+* { margin: 0; padding: 0; list-style: none;  box-sizing: border-box; }
+
+html{
+    width: 100%;
+}
+body{
+    line-height: 1.4;
+    font-family: 'Roboto', sans-serif;
+
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* variables */
+
+:root{
+    --purple:#611BC6;
+   
+    --purpleLighter:#741CE8;
+}
+
+/* Header */
+
+#navbar{
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:var(--purple);
+    padding: 1rem 4rem 1rem 4rem;
+    z-index: 1;
+    position: sticky;
+}
+
+
+.logo{
+    
+    color: white;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    
+}
+
+.logo h1{
+    font-weight: bolder;
+    
+}
+
+.logo img{
+    width: 40px;
+    height: 50px;
+}
+
+#navbar ul{
+    display: flex;
+    
+
+}
+
+#navbar ul li{
+    margin-left: 1rem;
+}
+
+#navbar ul li a{
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bolder;
+}
+
+#navbar ul li a:hover ,.hiddenMenu a:hover{
+    color: 	#FFD700;
+}
+#navbar .fa-bars{
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+
+.hiddenMenu{
+    z-index: 99;
+    background: var(--purpleLighter);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+    -webkit-box-shadow: -1px 6px 5px -2px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 6px 5px -2px rgba(0,0,0,0.75);
+box-shadow: -1px 6px 5px -2px rgba(0,0,0,0.75);
+    
+}
+
+.hiddenMenu a{
+    color: white;
+}
+
+.hiddenMenu ul li{
+    width: 90%;
+    margin-top: 2rem;
+}
+
+
+.toggleHide{
+    display: none;
+}
+
+/* End header */
+
+/* Section presenatation */
+#presenatation{
+  color: white;
+}
+#presenatation .contentPr{
+background: url('./images/background.jpg' ) center center/cover;
+width: 100%;
+height: 100vh;
+
+}
+
+.opa{
+
+    background: rgba(61, 7, 179, 0.2);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    
+}
+
+.contentPr h1,.contentPr h2{
+    margin-bottom: 2rem;
+    max-width: 90%;
+}
+
+.contentPr h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: lighter;
+    
+}
+
+.contentPr img{
+    max-width: 80%;
+    height: 500px;
+}
+
+.contentPr a{
+    color: black;
+    background: #f8d613;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 0.3rem;
+    font-weight: bolder;
+    border: none;
+}
+
+.contentPr a:hover{
+    
+    background: var(--purpleLighter);
+    color: white;
+}
+/* End section presenatation */
+
+/* Section Services */
+
+#services{
+    position: relative;
+    border-bottom: 1px solid black;
+}
+.contentServices{
+    width: 70%;
+    margin:  4rem auto 4rem auto;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+
+.task{
+    margin-right: 1rem;
+}
+.contentServices .fas , .contentServices .fab{
+    font-size: 3rem;
+    color: var(--purpleLighter);
+    margin-bottom: 1rem;
+    
+}
+
+.contentServices h2{
+    margin-bottom: 1rem;
+    color: var(--purple);
+    font-size: 1rem;
+}
+
+.arrows .fas{
+font-size: 2rem;
+cursor: pointer;
+color: var(--purple);
+opacity: 0.4;
+}
+
+.arrows .fas:hover ,.arrows .fas:active{
+   
+    opacity: 1;
+    }
+.arrows .fa-arrow-left{
+position: absolute;
+left: 50px;
+top: 45%;
+
+}
+
+.arrows .fa-arrow-right{
+    position: absolute;
+    top: 45%;
+    right: 50px;
+}
+
+
+/* End section Services */
+
+/* Section projets */
+
+#projets{
+    
+    
+    text-align: center;
+    padding: 3rem 0 3rem 0;
+}
+
+#projets h1{
+    display: inline-block;
+    font-weight: bolder;
+    border-bottom: 1px solid gray;
+   
+    padding-bottom: 1rem;
+}
+
+.projetsImages{
+    width: 85%;
+    margin:2rem  auto 2rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 1rem;
+ 
+}
+
+
+
+.projetsImages img{
+    
+    width:95%;
+    height: 300px;
+    cursor: pointer;
+    -webkit-box-shadow: 0px -2px 4px -1px rgba(0,0,0,1);
+-moz-box-shadow: 0px -2px 4px -1px rgba(0,0,0,1);
+box-shadow: 0px -2px 4px -1px rgba(0,0,0,1);
+    
+
+}
+
+ .projetText{
+     background: var(--purpleLighter);
+     color: white;
+    width:95%;
+    height: 300px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.projetText button{
+    margin-top: 1rem;
+    max-width: 90%;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border: 4px solid #ed2939;
+    background: transparent;
+    color: white;
+    border-radius: 1rem 0.2rem 1rem 0.2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.projetText button:hover{
+
+    background: #f8d613;
+    color: black;
+    border: none;
+    border: 3px solid var(--purpleLighter);
+}
+
+/* More projets images */
+.containerMore{
+
+    
+    
+    position: fixed;
+    display: none;
+    
+    top: 0;
+    width: 100%;
+    height: 90%;
+   
+    z-index: 9999;
+}
+
+.moreImages{
+    background: black;
+    -webkit-box-shadow: -1px 6px 5px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 6px 5px -2px rgba(0,0,0,0.75);
+    box-shadow: -1px 6px 5px -2px rgba(0,0,0,0.75);
+    position: relative;
+    margin: auto;
+    width: 90%;
+}
+
+.moreImages .fas {
+    font-size: 2.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    color: white;
+    background: black;
+}
+
+.moreImages .fa-chevron-left{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+}
+
+.moreImages .fa-chevron-right{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    
+}
+
+.moreImages .fa-times{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: transparent;
+    color: red;
+    
+    
+}
+
+
+.moreImages img{
+    
+    max-width: 100%;
+    border: 1px solid var(--purple);
+    margin: 0.3rem 0 0.3rem 0;
+    
+    display: block;
+    margin: auto;
+    height: 100%;
+}
+
+/* End section projets */
+
+/* footer */
+
+footer {
+    text-align: center;
+}
+
+footer .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+footer .icons .fab , .icons .fas{
+    font-size: 3rem;
+    color: var(--purple);
+    margin-left: 1rem;
+}
+
+footer p{
+    margin: 1rem 0 1rem 0;
+    
+    font-weight: bold;
+}
+
+
+/* end footer */
